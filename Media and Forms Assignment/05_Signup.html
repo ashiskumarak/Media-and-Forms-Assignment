@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_Signup</title>
+    <style>
+        body {
+            background-color: rgb(68, 125, 172)
+        }
+
+        label {
+            font-size: 29px;
+            padding: 20px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 13px;
+            margin: 19px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form method="get">
+        <h1>User Form</h1>
+        <fieldset>
+            <legend>SignUp Now</legend>
+            <label for="firstname">Enter First Name:</label>
+            <input type="text" name="firstname" id="firstname" minlength="3" required> <br>
+            <label for="lastname">Enter Last Name:</label>
+            <input type="text" name="lastname" id="lastname" minlength="3" required> <br>
+
+            <label for="email">Enter email:</label>
+            <input type="email" name="email" id="email" minlength="3" required> <br>
+
+            <label for="password">Enter Password:</label>
+            <input type="password" name="password" id="password" required> <br>
+            <label for="password">Confirm Password:</label>
+            <input type="password" name="password" id="password" required> <br>
+
+            <label for="age">Enter Your Age:</label>
+            <input type="number" name="age" id="age" min="0" max="150"> <br>
+
+            <label for="gender">Select Gender</label>
+            <input type="radio" name="gender" id="gender">Male
+            <input type="radio" name="gender" id="gender"> Female
+            <input type="radio" name="gender" id="gender"> Others <br>
+
+            <label for="course">Select Course</label>
+            <select name="course" id="course">Select Course
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Python">Python</option>
+                <option value="SQl">SQL</option>
+            </select> <br>
+
+            <input type="checkbox" required> Terms & Condition* <br>
+
+            <button type="submit"> SignUp</button> <br>
+            <label>If have account</label>
+            <button>
+                <a href="05_Signin.html">SignIn</a></button>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
